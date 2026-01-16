@@ -16,11 +16,11 @@ const Login = () => {
    <div className="container">
     <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
-        <div>
+        <div className="input-field">
         <input type="email" placeholder='email' onChange={(e) => setUsername(e.target.value)}/>  
         <FaUser className="icon"></FaUser>
         </div>
-        <div>
+        <div className="input-field">
         <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)} />
         <FaLock className="icon"></FaLock>
         </div>
